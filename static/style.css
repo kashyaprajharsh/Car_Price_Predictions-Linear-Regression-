@@ -1,0 +1,222 @@
+body{
+    background-color: #040303;
+    text-align: center;
+    padding: 0px;
+    text-decoration-color: aliceblue;
+    color: #DDDDDD;
+}
+
+
+.top_container {
+  height:100vh;
+  padding: auto;
+  background-image: linear-gradient(to right bottom,
+ rgba(29, 73, 120, 0.801),
+  rgba(128, 26, 190, 0.991)),
+    url("car.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+}
+
+
+.page{
+     height: 125vh;
+     padding: auto;
+     padding-top: 100px;
+    background-image: linear-gradient(to right bottom,
+   rgba(29, 73, 136, 0.801),
+    rgba(171, 44, 196, 0.877)),
+      url("car2.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%,0% 100%)
+    
+}
+
+
+
+  .ani {
+    animation: moveInright 1s ease-out;
+    letter-spacing: 10.4px;
+    display: block;
+  }
+  .ani:visited,
+  .ani:active,
+  .ani::after,
+  .ani:hover {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: tada; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+  }
+
+  .topright{
+    position: sticky;
+    right: auto;
+    top: auto;
+    display: flex;
+    height: 450px;
+    width: 450px;
+    margin: 0 auto 0 auto;
+    text-decoration: none;
+  }
+
+
+.research {
+    font-size: 18px;
+    width: 100px;
+    height: 23px;
+    top: 23px;
+}
+
+
+
+.box {
+    border-radius: 60px;
+    border-color: 45px;
+    border-style: solid;
+    font-family: cursive;
+    text-align: center;
+    background-color: #150050;
+    font-size: medium;
+    position: absolute;
+    width: 700px;
+    bottom: 9%;
+    height: 850px;
+    right: 30%;
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.fuel {
+    width: 83px;
+    height: 43px;
+    text-align: center;
+    border-radius: 14px;
+    font-size: 20px;
+}
+
+.fuel:hover {
+    background-color: #082032;
+}
+
+.research {
+    width: 99px;
+    height: 43px;
+    text-align: center;
+    border-radius: 14px;
+    font-size: 18px;
+}
+
+.research:hover {
+    background-color: #082032;
+}
+
+.resea {
+    width: 99px;
+    height: 43px;
+    text-align: center;
+    border-radius: 14px;
+    font-size: 18px;
+}
+
+.resea:hover {
+    background-color:#082032;
+}
+
+
+
+  
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #222831;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 10px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.btn::after {
+  content: "";
+  color: #222831;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+  background: #d0e8f2;
+}
+
+
+.first {
+    border-radius: 14px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.second {
+    border-radius: 14px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.third {
+    border-radius: 14px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.fourth {
+    border-radius: 14px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+@keyframes moveInright {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+  
+    80% {
+      transform: translateX(-10px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
